@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=SystemLens
+Comment=Linux system monitoring dashboard
+Exec=systemlens
+Icon=systemlens
+Terminal=false
+Categories=System;Utility;Monitor;

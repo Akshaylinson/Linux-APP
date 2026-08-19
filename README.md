@@ -35,3 +35,4 @@ flutter build linux --release
 - The app is intentionally local-only and does not require a backend.
 - Docker features degrade safely if Docker is missing or inaccessible.
 - I couldn’t validate a desktop build in this environment because `flutter` and `dart` are not installed here.
+# Linux-APP

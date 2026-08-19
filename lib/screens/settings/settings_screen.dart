@@ -19,7 +19,7 @@ class SettingsScreen extends ConsumerWidget {
           SectionCard(
             title: 'Appearance',
             child: DropdownButtonFormField<ThemeModeChoice>(
-              value: settings.themeMode,
+              initialValue: settings.themeMode,
               decoration: const InputDecoration(labelText: 'Theme'),
               items: const [
                 DropdownMenuItem(value: ThemeModeChoice.system, child: Text('System')),
@@ -37,7 +37,7 @@ class SettingsScreen extends ConsumerWidget {
           SectionCard(
             title: 'Refresh',
             child: DropdownButtonFormField<RefreshInterval>(
-              value: settings.refreshInterval,
+              initialValue: settings.refreshInterval,
               decoration: const InputDecoration(labelText: 'Refresh Interval'),
               items: const [
                 DropdownMenuItem(value: RefreshInterval.one, child: Text('1 sec')),
@@ -57,7 +57,7 @@ class SettingsScreen extends ConsumerWidget {
           SectionCard(
             title: 'Temperature',
             child: DropdownButtonFormField<TemperatureUnit>(
-              value: settings.temperatureUnit,
+              initialValue: settings.temperatureUnit,
               decoration: const InputDecoration(labelText: 'Temperature Unit'),
               items: const [
                 DropdownMenuItem(value: TemperatureUnit.celsius, child: Text('Celsius')),

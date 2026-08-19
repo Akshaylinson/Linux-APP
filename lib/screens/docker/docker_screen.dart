@@ -62,9 +62,9 @@ class DockerScreen extends ConsumerWidget {
                       ),
               ),
               const SizedBox(height: 16),
-              SectionCard(
+              const SectionCard(
                 title: 'Safe Cleanup',
-                child: const _CleanupPreview(),
+                child: _CleanupPreview(),
               ),
             ],
           ),
@@ -174,7 +174,7 @@ class _CleanupPreviewState extends State<_CleanupPreview> {
           title: const Text('Reclaim build cache'),
         ),
         const SizedBox(height: 12),
-        Text('This is a preview-only panel in the current build.'),
+        const Text('This is a preview-only panel in the current build.'),
         const SizedBox(height: 8),
         if (actions.isNotEmpty)
           Text('Would affect: ${actions.join(', ')}'),

@@ -1,4 +1,4 @@
-import '../../models/memory_info.dart';
+import '../../../models/memory_info.dart';
 
 class MeminfoParser {
   MemoryInfo parse(String input) {

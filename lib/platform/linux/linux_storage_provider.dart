@@ -1,8 +1,6 @@
-import 'dart:convert';
 import 'dart:io';
 
 import '../../core/errors/app_exception.dart';
-import '../../core/utils/file_utils.dart';
 import '../../models/folder_usage.dart';
 import '../../models/storage_snapshot.dart';
 import 'linux_command_runner.dart';
@@ -38,11 +36,11 @@ class LinuxStorageProvider {
       // Fall through to mock data.
     }
 
-    return StorageSnapshot(
-      disks: const [],
-      partitions: const [],
-      filesystems: const [],
-      folderUsage: const {},
+    return const StorageSnapshot(
+      disks: [],
+      partitions: [],
+      filesystems: [],
+      folderUsage: {},
     );
   }
 

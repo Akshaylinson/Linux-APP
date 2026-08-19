@@ -24,7 +24,7 @@ class SparklineChart extends StatelessWidget {
         painter: _SparklinePainter(
           values: values,
           color: color ?? scheme.primary,
-          background: scheme.surfaceContainerHighest.withOpacity(0.4),
+          background: scheme.surfaceContainerHighest.withValues(alpha: 0.4),
         ),
       ),
     );
@@ -58,7 +58,7 @@ class _SparklinePainter extends CustomPainter {
       ..shader = LinearGradient(
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
-        colors: [color.withOpacity(0.30), color.withOpacity(0.0)],
+        colors: [color.withValues(alpha: 0.30), color.withValues(alpha: 0.0)],
       ).createShader(Rect.fromLTWH(0, 0, size.width, size.height));
 
     final path = Path();

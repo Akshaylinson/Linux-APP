@@ -24,7 +24,7 @@ class MetricCard extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: scheme.outlineVariant.withOpacity(0.4)),
+          border: Border.all(color: scheme.outlineVariant.withValues(alpha: 0.4)),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,7 +33,7 @@ class MetricCard extends StatelessWidget {
               width: 46,
               height: 46,
               decoration: BoxDecoration(
-                color: accent.withOpacity(0.14),
+                color: accent.withValues(alpha: 0.14),
                 borderRadius: BorderRadius.circular(14),
               ),
               child: Icon(icon, color: accent),

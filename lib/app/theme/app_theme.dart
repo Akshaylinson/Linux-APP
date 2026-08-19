@@ -28,8 +28,8 @@ class AppTheme {
       useMaterial3: true,
       colorScheme: scheme,
       scaffoldBackgroundColor: scheme.surface,
-      cardTheme: CardTheme(
-        color: scheme.surfaceContainerHighest.withOpacity(0.55),
+      cardTheme: CardThemeData(
+        color: scheme.surfaceContainerHighest.withValues(alpha: 0.55),
         elevation: 0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         margin: EdgeInsets.zero,

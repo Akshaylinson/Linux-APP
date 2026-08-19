@@ -1,10 +1,9 @@
 import 'dart:convert';
 
-import '../../core/utils/formatters.dart';
-import '../../models/disk_info.dart';
-import '../../models/filesystem_info.dart';
-import '../../models/partition_info.dart';
-import '../../models/storage_snapshot.dart';
+import '../../../models/disk_info.dart';
+import '../../../models/filesystem_info.dart';
+import '../../../models/partition_info.dart';
+import '../../../models/storage_snapshot.dart';
 
 class LsblkParser {
   StorageSnapshot parse({

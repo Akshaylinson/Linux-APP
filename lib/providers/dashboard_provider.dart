@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/constants/app_constants.dart';
-import '../models/battery_info.dart';
+import '../models/app_settings.dart';
 import '../models/dashboard_snapshot.dart';
 import '../models/docker_info.dart';
 import '../models/network_info.dart';

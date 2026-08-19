@@ -26,7 +26,6 @@ class LinuxSystemProvider {
 
   List<int>? _previousCpuTotals;
   List<int>? _previousCpuIdle;
-  DateTime? _previousCpuSample;
 
   Map<String, _NetCounters>? _previousNetCounters;
   DateTime? _previousNetSample;
@@ -65,7 +64,6 @@ class LinuxSystemProvider {
       final sample2 = _parseCpuSample(later);
       _previousCpuTotals = sample2.totals;
       _previousCpuIdle = sample2.idles;
-      _previousCpuSample = DateTime.now();
       return _cpuParser.parse(
         cpuInfo: cpuInfoText,
         procStat: later,
@@ -83,7 +81,6 @@ class LinuxSystemProvider {
     );
     _previousCpuTotals = sample1.totals;
     _previousCpuIdle = sample1.idles;
-    _previousCpuSample = DateTime.now();
 
     return _cpuParser.parse(
       cpuInfo: cpuInfoText,

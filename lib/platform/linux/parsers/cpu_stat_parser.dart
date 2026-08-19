@@ -1,4 +1,4 @@
-import '../../models/cpu_info.dart';
+import '../../../models/cpu_info.dart';
 
 class CpuStatParser {
   CpuInfo parse({

@@ -3,10 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/utils/formatters.dart';
 import '../../models/process_info.dart';
-import '../../models/system_snapshot.dart';
 import '../../providers/dashboard_provider.dart';
 import '../../widgets/common/section_card.dart';
-import '../../widgets/common/status_chip.dart';
 import '../../widgets/common/usage_bar.dart';
 
 class SystemScreen extends ConsumerWidget {
@@ -195,8 +193,8 @@ class _ProcessTable extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          children: const [
+        const Row(
+          children: [
             Expanded(flex: 3, child: Text('Process')),
             Expanded(child: Text('CPU')),
             Expanded(child: Text('RAM')),

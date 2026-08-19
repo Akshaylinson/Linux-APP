@@ -1,5 +1,4 @@
-import '../../core/utils/formatters.dart';
-import '../../models/docker_info.dart';
+import '../../../models/docker_info.dart';
 
 class DockerParser {
   List<DockerContainerInfo> parseContainers(String output) {
